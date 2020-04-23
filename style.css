@@ -16,7 +16,7 @@ body {
   .jumbotron {
     text-align: center;
     background-color: transparent;
-    color: white;
+    color: rgb(250, 6, 6);
     border-radius: 40px;
     border-bottom: 20px solid black;
   }
@@ -139,3 +139,4 @@ body {
   .time-1{
     display: flex;
   }
+  

@@ -14,75 +14,75 @@ const fourPM = document.getElementById('4pm');
 const fivePM = document.getElementById('5pm');
 
 const saveNine = document.getElementById('saveNine');
-const saveNineField = () => {
+const saveNineBlock = () => {
   let nineAMText = nineAM.value;
   localStorage.setItem("nine", nineAMText);
   console.log(localStorage.getItem("nine"));
 }
-saveNine.addEventListener("click", saveNineField);
+saveNine.addEventListener("click", saveNineBlock);
 
 const saveTen = document.getElementById('saveTen');
-const saveTenField = () => {
+const saveTenBlock = () => {
   let tenAMText = tenAM.value;
   localStorage.setItem("ten", tenAMText);
   console.log(localStorage.getItem("ten"));
 }
-saveTen.addEventListener("click", saveTenField);
+saveTen.addEventListener("click", saveTenBlock);
 
 const saveEleven = document.getElementById('saveEleven');
-const saveElevenField = () => {
+const saveElevenBlock = () => {
   let elevenAMText = elevenAM.value;
   localStorage.setItem("eleven", elevenAMText);
   console.log(localStorage.getItem("eleven"));
 }
-saveEleven.addEventListener("click", saveElevenField);
+saveEleven.addEventListener("click", saveElevenBlock);
 
 const saveTwelve = document.getElementById('saveTwelve');
-const saveTwelveField = () => {
+const saveTwelveBlock = () => {
   let twelvePMText = twelvePM.value;
   localStorage.setItem("twelve", twelvePMText);
 }
-saveTwelve.addEventListener("click", saveTwelveField);
+saveTwelve.addEventListener("click", saveTwelveBlock);
 
 const saveOne = document.getElementById('saveOne');
-const saveOneField = () => {
+const saveOneBlock = () => {
   let onePMText = onePM.value;
   localStorage.setItem("one", onePMText);
   console.log(localStorage.getItem("one"));
 }
-saveOne.addEventListener("click", saveOneField);
+saveOne.addEventListener("click", saveOneBlock);
 
 const saveTwo = document.getElementById('saveTwo');
-const saveTwoField = () => {
+const saveTwoBlock = () => {
   let twoPMText = twoPM.value;
   localStorage.setItem("two", twoPMText);
   console.log(localStorage.getItem("two"));
 }
-saveTwo.addEventListener("click", saveTwoField);
+saveTwo.addEventListener("click", saveTwoBlock);
 
 const saveThree = document.getElementById('saveThree');
-const saveThreeField = () => {
+const saveThreeBlock = () => {
   let threePMText = threePM.value;
   localStorage.setItem("three", threePMText);
   console.log(localStorage.getItem("three"));
 }
-saveThree.addEventListener("click", saveThreeField);
+saveThree.addEventListener("click", saveThreeBlock);
 
 const saveFour = document.getElementById('saveFour');
-const saveFourField = () => {
+const saveFourBlock = () => {
   let fourPMText = fourPM.value;
   localStorage.setItem("four", fourPMText);
   console.log(localStorage.getItem("four"));
 }
-saveFour.addEventListener("click", saveFourField);
+saveFour.addEventListener("click", saveFourBlock);
 
 const saveFive = document.getElementById('saveFive');
-const saveFiveField = () => {
+const saveFiveBlock = () => {
   let fivePMText = fivePM.value;
   localStorage.setItem("five", fivePMText);
   console.log(localStorage.getItem("five"));
 }
-saveFive.addEventListener("click", saveFiveField);
+saveFive.addEventListener("click", saveFiveBlock);
 
 
 let toDoList = [];
@@ -114,7 +114,7 @@ const updateContent = () => {
 const checkTimes = () => {
   let currentTime = moment().hour();
   if (currentTime >= 9 && currentTime < 10) {
-    nineAM.style.background = "#d3d3d";
+    nineAM.style.background = "#fa6c14";
   }
   else if (currentTime >= 10 && currentTime < 11) {
     nineAM.style.background = "lightgrey";

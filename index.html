@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -26,10 +28,10 @@
   <body>
 
     <header class="jumbotron">
-      <h1 class="display-2">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <h2 class="date" id="time"></h2>
-      <p id="currentDay" class="lead"></p>      
+      <h1 class="display-2">Work Day Scheduler</h1> 
+      
+      <p id="currentDay" class="lead">A simple calender APP for scheduling your work day</p>
+      <h2 class="date" id="date"></h2>      
     </header>
 
     
@@ -82,12 +84,19 @@
               </div>
           </div>
           </div>
-      <!-- Timeblocks go here -->
+      
+      <script>
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+      </script>
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.js"></script>
     
     <script src="./style.css"></script>
     <script src="./script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  
   </body>
 </html>
 
